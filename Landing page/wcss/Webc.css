@@ -41,9 +41,6 @@ img{
     padding: 10px;
 }
 
-.menu{ /*Mobile Menu*/
+.menu.span{ /*Mobile Menu*/
     display: block;
-    width: 26px;
-    height: 26px;
-    background-color: darkblue;
 }
