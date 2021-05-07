@@ -216,3 +216,10 @@ form.sign-up-form{
 .right-panel .content, .right-panel .image{
     transform: translateX(800px);
 }
+
+/*Add Transision*/
+
+.conteiners.sign-up-mode::before{
+    transform: translate(100%, -50% );
+    right: 52%;
+}
