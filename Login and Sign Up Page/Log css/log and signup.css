@@ -18,6 +18,18 @@ body,input{
     overflow: hidden;
 }
 
+.conteiners::before{
+    content: '';
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    border-radius: 50%;
+    background: linear-gradient(-45deg, #50badd, #24f73d  ); /* add gradient*/
+    top: -10%;
+    right: 48%;
+    transform: translateY(-50%);
+}
+
 .forms-content{
     position: absolute;
     width: 100%;
@@ -26,13 +38,34 @@ body,input{
     left: 0;
 }
 
+.signin-signup{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 form{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 0 5rem;
+    overflow: hidden;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
+form.sign-in-form{
+    z-index: 2;
+}
+form.sign-up-form{
+    z-index: 1;
+    opacity: 0;
+}
 .title{
     font-size: 2.2rem;
     color: #444;
@@ -97,5 +130,75 @@ form{
 }
 
 .social-media{
-    
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon{
+    height: 46px;
+    width: 46px;
+    border: 1px solid black;
+    margin: 0 0.45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    transition: 0.3s;  
+}
+
+.social-icon:hover{
+    color:#43d6b6;
+    border-color: #3cecc0;
+}
+
+.panels-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.panel{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.left-panel{
+    padding: 3rem 17% 2rem 12%;
+}
+.right-panel{
+    padding: 3rem 12% 2rem 17%;
+}
+
+.panel .content{
+    color: #fff;
+}
+
+.panel h3{
+    font-weight: 600;
+    line-height: 1;
+    font-size:1.5rem;
+}
+
+.panel p{
+    font-size: 0.95rem;
+    padding: 0.7rem 0;
+}
+
+.button.transparent{
+    margin: 0;
+    background: none;
+    border: 2px solid #fff;
+}
+.image{
+    width: 100%;
 }
