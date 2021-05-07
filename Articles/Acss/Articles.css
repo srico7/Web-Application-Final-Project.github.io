@@ -12,6 +12,7 @@ body{
     font-size: 200%;
     color: black(202, 171, 124, 0.753);
     padding-top: 80px;
+    background-position: 50% 50%;
 }
 .img-1:hover{
     font-size: 50px;
@@ -27,6 +28,7 @@ body{
     margin-left: 0%;
     border: 0px;
     background-size: cover;
+    background-position: 50% 50%;
 }
 .row2{
     width: 100%;
@@ -39,6 +41,7 @@ body{
     margin-left: 0%;
     border: 0px;
     background-size: cover;
+    background-position: 50% 50%;
 }
 .row3{
     width: 100%;
@@ -51,6 +54,7 @@ body{
     margin-left: 0%;
     border: 0px;
     background-size: cover;
+    background-position: 50% 50%;
 }
 .col3-1{
     width: 50%;
@@ -59,8 +63,9 @@ body{
     margin-left: 0%;
     border: 0px;
     background-size: cover;
+    background-position: 50% 50%;
 }
-.col3-1:hover{
+.col1:hover,.col2:hover,.col3-1:hover{
     -webkit-filter: grayscale(200%);
     -webkit-transition: all 1s ease;
     -webkit-transform: scale(1.01);
