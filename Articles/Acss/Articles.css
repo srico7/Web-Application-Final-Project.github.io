@@ -28,7 +28,10 @@ body{
     margin-left: 0%;
     border: 0px;
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: 50% 50%;  
+}
+.text-1{
+
 }
 .row2{
     width: 100%;
