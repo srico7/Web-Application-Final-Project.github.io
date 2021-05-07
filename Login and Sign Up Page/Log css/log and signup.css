@@ -29,6 +29,7 @@ body,input{
     right: 48%;
     transform: translateY(-50%);
     z-index: 6;
+    transition: 1.8s ease-in-out;
 }
 
 .forms-content{
