@@ -1,0 +1,55 @@
+.outer {
+    border: 1px solid black;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    background-color: black;
+}
+
+.middle {
+    border: 1px solid red;
+    width: 1000px;
+    height: 550px;
+    margin: 20px 20px;
+}
+
+.inner {
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.font {
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+#div1 {
+    background-color: yellow;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmndDrPKCKNZzR6vzNnvHn59CwI53O0F-ayw&usqp=CAU);
+}
+
+#div2 {
+    background-color: orange;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#div3 {
+    background-color: blue;
+}
+
+#div4 {
+    background-color: #3bbf42;
+}
+
+#div5 {
+    background-color: #df1d7e;
+}
