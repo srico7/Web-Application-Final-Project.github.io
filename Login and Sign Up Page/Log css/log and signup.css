@@ -61,6 +61,7 @@ form{
     overflow: hidden;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    transition: 0.2s 0.7s ease-in-out;
 }
 
 form.sign-in-form{
@@ -236,7 +237,9 @@ form.sign-up-form{
     transform: translateX(-800px);
 }
 
-.conteiners.sign-up-mode .right-panel .content, 
+.conteiners.sign-up-mode .right-panel .content{
+    transform: translateX(0px);
+} 
 .conteiners.sign-up-mode .right-panel .image{
     transform: translateX(0px);
 }
@@ -249,4 +252,14 @@ form.sign-up-form{
 
 .conteiners.sign-up-mode .signin-signup{
     left: 25%;
+}
+
+.conteiners.sign-up-mode form.sign-in-form{
+    z-index: 1;
+    opacity: 0;
+}
+
+.conteiners.sign-up-mode form.sign-up-form{
+   z-index: 2;
+   opacity: 1;
 }
