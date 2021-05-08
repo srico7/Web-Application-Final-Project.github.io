@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
+    font-family: 'Public Sans', sans-serif;
 }
 .img-1 {
     width: 100%;
@@ -15,7 +16,7 @@ body{
     background-position: 50% 50%;
 }
 .img-1:hover{
-    font-size: 50px;
+    font-size: 40px;
 }
 .row1{
     width: 100%;
@@ -30,7 +31,15 @@ body{
     background-size: cover;
     background-position: 50% 50%;  
 }
-.text-1{
+.text{
+    padding-top: 80px;
+    padding-left: 80px;
+    
+
+}
+.text-h1{
+    font-size: 40px;
+    
 
 }
 .row2{
