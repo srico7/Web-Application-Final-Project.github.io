@@ -10,3 +10,4 @@ sign_in_button.addEventListener('click',function () {
     conteiners.classList.remove("sign-up-mode");
 });
 
+document.write('hello');
