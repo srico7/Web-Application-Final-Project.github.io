@@ -132,6 +132,22 @@ body{
     -webkit-transform: scale(1.01);
     transition-delay: 0.2s;
 }
+.row5{
+    width: 100%;
+    height: auto;
+}
+.col5{
+    width: 50%;
+    height: 500px;
+    float: left;
+    margin-left: 0%;
+    border: 0px;
+    background-size: cover;
+    background-position: 50% 50%;
+    /*background: linear-gradient(to right,limegreen, rgb(17, 189, 189));*/
+}
+
+}
 /*    @media (max-width:870px){
     .check{
         min-height: 800px;
