@@ -31,6 +31,15 @@ body{
     background-size: cover;
     background-position: 50% 50%;  
 }
+.col1-1{
+    width: 50%;
+    height: 500px;
+    float: left;
+    margin-left: 0%;
+    border: 0px;
+    background-size: cover;
+    background-position: 50% 50%;  
+}
 .text{
     padding-top: 80px;
     padding-left: 90px;
@@ -117,7 +126,7 @@ body{
 #text4{
     color: white;
 }
-.col1:hover,.col2:hover,.col3-1:hover{
+.col1:hover,.col2:hover,.col3-1:hover,.col4-1:hover{
     -webkit-filter: grayscale(200%);
     -webkit-transition: all 1s ease;
     -webkit-transform: scale(1.01);
