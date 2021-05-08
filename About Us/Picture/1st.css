@@ -1,34 +1,15 @@
-    .outer {}
-    
-    .li {
-        float: left;
-        padding-left: 150px;
-        color: white;
-        font-weight: bold;
-        font-size: 400%;
-    }
-    
-    .ul {
-        list-style: none;
-        background-color: black;
-        overflow: hidden;
-        padding-left: 0px;
-        padding-right: 00px;
-        margin: 0px;
-    }
-    
-    .down {
-        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLVzIQYy24tlW8nM0ygfJOT8cuu9lLQIL_Fw&usqp=CAU);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        padding: bottom;
-        height: 425;
-    }
-    
-    .font {
-        font-weight: bold;
-        text-align: center;
-        color: white;
-        size: 1500000cm;
-    }
+.down {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLVzIQYy24tlW8nM0ygfJOT8cuu9lLQIL_Fw&usqp=CAU);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: bottom;
+    height: 425;
+}
+
+.font {
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    size: 1500000cm;
+}
