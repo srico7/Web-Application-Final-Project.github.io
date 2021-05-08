@@ -14,11 +14,39 @@
     size: 5px;
 }
 
-h1 {
+h4 {
     font-weight: bold;
     text-shadow: -2px 5px #3bbf42;
     text-shadow: 2px 5px #3bbf42;
     text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+h4 {
+    position: relative;
+    animation: myfirst 20s linear 16s infinite alternate;
+}
+
+@keyframes myfirst {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        left: 1150px;
+        top: 0px;
+    }
+    50% {
+        left: 1150px;
+        top: 1000px;
+    }
+    75% {
+        left: 0px;
+        top: 1000px;
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+    }
 }
 
 
@@ -57,6 +85,28 @@ h1 {
     text-align: center;
     color: rgb(41, 226, 24);
     font-size: 100;
+    text-shadow: 2px 2px 5px red;
+}
+.blob {
+    texr-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    transform: scale(1);
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        text-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+    
+    70% {
+        transform: scale(1);
+        text-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+    
+    100% {
+        transform: scale(0.95);
+        text-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
 }
 #div1 {
     background-color: yellow;
