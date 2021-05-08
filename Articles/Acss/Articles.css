@@ -84,12 +84,55 @@ body{
     background-size: cover;
     background-position: 50% 50%;
 }
+.text-11{
+    border: 2px solid white;
+    padding: 10px 25px;
+    text-decoration: none;
+    margin-top: 1900px;
+    color: white;
+    font-size: 14px;
+}
+.row4{
+    width: 100%;
+    height: auto;
+}
+.col4-1{
+    width: 60%;
+    height: 500px;
+    float: left;
+    margin-left: 0%;
+    border: 0px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.col4{
+    width: 40%;
+    height: 500px;
+    float: left;
+    margin-left: 0%;
+    border: 0px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#text4{
+    color: white;
+}
 .col1:hover,.col2:hover,.col3-1:hover{
     -webkit-filter: grayscale(200%);
     -webkit-transition: all 1s ease;
     -webkit-transform: scale(1.01);
     transition-delay: 0.2s;
 }
+/*    @media (max-width:870px){
+    .check{
+        min-height: 800px;
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        transform: translate(-50%, -100% )
+    }        
+}*/
 
 
 
