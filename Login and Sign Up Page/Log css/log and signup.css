@@ -262,11 +262,11 @@ form.sign-up-form{
 }
 
 /*Create responsive*/
+/*Tablet Mode*/
 
-@media (max-width:870px){
+@media (max-width:950px){
     .conteiners{
-        min-height: 800px;
-        height: 100vh;
+        height: auto;
     }
 
     .conteiners::before{
@@ -346,8 +346,33 @@ form.sign-up-form{
         transform: translateY(-300px);
     }
     .conteiners.sign-up-mode .signin-signup{
-        top: 15%;
+        top: 5%;
         transform: translate(-50%, 0);
+        left: 50%;
+    }
+}
+/*Mobile Size Mode*/
+@media (max-width:570px){
+    form{
+        padding: 0 2rem;
+        width: auto;
+    }
+
+    .image{
+        display: none;
+    }
+
+    .panel .content{
+        padding: 0.5rem 1rem;
+    }
+
+    .conteiners::before{
+        bottom: 72%;
+        left: 50%;
+    }
+
+    .conteiners.sign-up-mode::before{
+        bottom:30%;
         left: 50%;
     }
 }
