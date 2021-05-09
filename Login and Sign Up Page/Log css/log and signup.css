@@ -22,7 +22,7 @@ body{
     width: 2000px;
     height: 2000px;
     border-radius: 50%;
-    background: linear-gradient(-45deg, #50badd, #24f73d  ); /* add gradient*/
+    background: linear-gradient(-45deg, #50badd, #5ED46C ); /* add gradient*/
     /* */
     top: -10%;
     right: 48%;
@@ -80,12 +80,12 @@ form.sign-up-form{
     max-width: 380px;
     width: 100%;
     height: 55px;
-    background-color: #f0f0f0;
-    margin: 10px 0;
-    border-radius: 55px;
-    display: grid;
+    background-color: #f0f0f000;
+    margin: 10px 10px;
+    display: block ;
     grid-template-columns: 15% 85%;
     padding: 0 .4rem;
+    border-bottom: 2px solid #333;
 }
 .input-field i{
     text-align: center;
@@ -99,14 +99,28 @@ form.sign-up-form{
     outline: none;
     border: none;
     line-height: 1;
-    font-weight: 600;
-    font-size: 1.1rem;
+    font-weight: 300;
+    font-size: 1rem;
     color: black;
 }
 
 .input-field input::placeholder{
     color: #aaa;
-    font-weight: 500;
+    font-weight: ;
+}
+
+.visible{
+    position:absolute;
+    padding-left:150px;
+}
+a.fogot
+{
+    display:block;
+    text-align: right;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    transition: .3s;
 }
 
 .button{
@@ -133,12 +147,12 @@ form.sign-up-form{
     font-size: 1rem;
 }
 
-.social-media{
+.social{
     display: flex;
     justify-content: center;
 }
 
-.social-icon{
+.icon{
     height: 46px;
     width: 46px;
     border: 1px solid black;
@@ -153,7 +167,7 @@ form.sign-up-form{
     transition: 0.3s;  
 }
 
-.social-icon:hover{
+.icon:hover{
     color:#43d6b6;
     border-color: #3cecc0;
 }
@@ -332,12 +346,12 @@ form.sign-up-form{
         grid-row: 3 / 4;
     }
     .right-panel .content, .right-panel .image{
-        transform: translateY(300px);
+        transform: translateY(400px);
     }
 
     .conteiners.sign-up-mode:before{
         transform: translate(-50%, 100% );
-        bottom:32%;
+        bottom:30%;
         right: initial;
     }
 
@@ -354,7 +368,8 @@ form.sign-up-form{
 /*Mobile Size Mode*/
 @media (max-width:570px){
     form{
-        padding: 0 2rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
         width: auto;
     }
 
@@ -372,7 +387,7 @@ form.sign-up-form{
     }
 
     .conteiners.sign-up-mode::before{
-        bottom:30%;
+        bottom:25%;
         left: 50%;
     }
 }
