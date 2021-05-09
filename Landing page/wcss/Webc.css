@@ -26,17 +26,39 @@ a, a:visited, a:hover{
 .flex{
     display: flex;
 }
-.jc-sb{
+.flex.jc-sb{
     justify-content: space-between;
 }
 
-.jc-cc{
+.flex.jc-cc{
     justify-content: center;
 }
 
-.ai-c{
+.flex.ai-c{
     align-items: center;
 }
+  
+.header .links a{
+    position: relative;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: lightslategray;
+    transition: color 300ms ease-in-out;
+    margin-right: 32px;
+
+    }
+    .links a::before{
+        content: '';
+        display: block;
+        position: absolute;
+        height: 5px;
+        left: 0;
+        right: 0;
+        bottom: -30px;
+        background: linear-gradient(to right,limegreen, rgb(17, 189, 189));
+        opacity: 0;
+        transition: opacity 300ms ease-in-out;
+    }
 
 .header .logo img{
     width: 200px;
@@ -70,29 +92,6 @@ a, a:visited, a:hover{
 .header.open .menu span:last-child{
     transform: rotate(-45deg);
         
-    }}
-
-
-.header .links a{
-    position: relative;
-    font-size: 0.875rem;
-    font-weight: 400;
-    color: lightslategray;
-    transition: color 300ms ease-in-out;
-    margin-right: 32px;
-
-    }
-    .links a::before{
-        content: '';
-        display: block;
-        position: absolute;
-        height: 5px;
-        left: 0;
-        right: 0;
-        bottom: -30px;
-        background: linear-gradient(to right,limegreen, rgb(17, 189, 189));
-        opacity: 0;
-        transition: opacity 300ms ease-in-out;
     }
 
 .links a:hover{
@@ -101,6 +100,35 @@ a, a:visited, a:hover{
 .links a:hover::before{
     opacity: 1;
     
+}
+.header .overlay{
+    opacity: 0;
+    position: fixed;
+    top: 5.75rem;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: linear-gradient(darkcyan, transparent);
+    visibility: visible;
+}
+
+.header .h_menu{
+    position: absolute;
+    width: calc(100% - 3rem);
+    left: 50%;
+    transform: translateX(-50%);
+    background:whitesmoke;
+    margin-top: 1.5rem;
+    padding: 1.62rem;
+    border-radius: 7px;
+}
+
+.header .h_menu a{
+
+    color: darkblue;
+    padding: 0.625rem;
+    display: block;
+    text-align: center;
 }
 /*Buttons*/
 
@@ -119,69 +147,89 @@ a, a:visited, a:hover{
 .button:hover{
     opacity: 0.75;
 }
-.overlay{
-    position: fixed;
-    top: 5.75rem;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    
-    background-image: linear-gradient(darkcyan, transparent);
-}
+
+
+/*Animations*/
+
+.has-fade {
+    visibility: hidden;
+  }
+
+@keyframes fade-in {
+    from {
+      visibility: hidden;
+      opacity: 0;
+    }
+    1% {
+      visibility: visible;
+      opacity: 0;
+    }
+    to {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+.fade-in {
+    animation: fade-in 300ms ease-in-out forwards;
+  }
+  
+  @keyframes fade-out {
+    from {
+      visibility: visible;
+      opacity: 1;
+    }
+    99% {
+      visibility: visible;
+      opacity: 0;
+    }
+    to {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+
+.fade-out {
+    animation: fade-out 300ms ease-in-out forwards;
+  }
 
  /*visibility*/ 
-
+ @media (min-width: 850px){
+    .menu{
+        display: none;
+    }
+}
+@media (max-width: 650px){
+    .button{
+        display: none;
+    }
+    .links{
+        display: none;
+    }
+    .header .logo img{
+        width: 150px;
+        padding: 7px;
+    }
+    .menu{
+        margin-left: 0.475rem;
+    }
+}
 
     @media (max-width: 850px){
-        .header .links a {
+        .button{
             display: none;
         }
-        .button{
-            width: 140px;
-            height: 40px;
-            margin-bottom: 4px;
-            margin-left: 3px;
-            padding: 0.875rem 1.875rem;
-            font-weight: 300;
-            font-size: 0.875rem;
-            border-radius: 30px;
+        .links{
+            display: none;
         }
-        .header .logo img{
+    
+        .logo img{
             width: 150px;
             padding: 7px;
         }
-        .menu{
-            margin-left: 6rem;
-        }
     }
 
-    @media (max-width: 650px){
-        .header .links a {
-            display: none;
-        }
-        .button{
-            width: 100px;
-            height: 30px;
-            margin-bottom: 4px;
-            margin-left: 3px;
-            padding: 0.5rem 1.575rem;
-            font-weight: 300;
-            font-size: 0.575rem;
-            border-radius: 20px;
-        }
-        .header .logo img{
-            width: 150px;
-            padding: 7px;
-        }
-        .menu{
-            margin-left: 0.475rem;
-        }
-    }
 
-    @media (min-width: 850px){
-        .menu{
-            display: none;
-        }
-    }
+
+  
 
 
