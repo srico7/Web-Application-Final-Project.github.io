@@ -2,7 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viweport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login page</title>
         <link rel="stylesheet" href="Log css/log and signup.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,15 +19,15 @@
                         <h2 class="title">Sign in</h2>
                         <div class="input-field">
                             <i class="fas fa-user"></i>
-                            <input type="text" placeholder="username">
+                            <input type="text" placeholder="username" required>
                         </div>
                         <div class="input-field">
+                            <div class="visible-password">
                             <i class="fas fa-lock"></i>
-                            <input type="password" placeholder="password">
-                            <span class="visible">
-                            <i class="far fa-eye"></i>
-                            <i class="far fa-eye-slash"></i>
-                            </span>
+                                <input type="password" name="password" id="password" placeholder="Enter the password" 
+                                minlength="8" required>
+                                <i class="far fa-eye" id="togglePassword"></i>
+                            </div>
                         </div>
                         <a href="#" class="fogot">Forgot password?</a>
                         <input type="submit" value="Sign in" class="button">
@@ -49,19 +50,19 @@
                         <h2 class="title">Sign up</h2>
                         <div class="input-field">
                             <i class="fas fa-user"></i>
-                            <input type="text" placeholder="username">
+                            <input type="text" placeholder="username" required>
                         </div>
                         <div class="input-field">
                             <i class="fas fa-envelope"></i>
-                            <input type="text" placeholder="email">
+                            <input type="email" id="email" placeholder="thelifeonland@example.com" required>
                         </div>
                         <div class="input-field">
-                            <i class="fas fa-lock"></i>
-                            <input type="password" placeholder="password">
-                            <span class="visible">
-                            <i class="far fa-eye"></i>
-                            <i class="far fa-eye-slash"></i>
-                            </span>
+                            <div class="visible-password">
+                                <i class="fas fa-lock"></i>
+                                    <input type="password" name="password" id="password2" placeholder="Enter the password" 
+                                    minlength="8" required>
+                                    <i class="far fa-eye" id="togglePassword2"></i>
+                                </div>
                         </div>
                         <input type="submit" value="Sign up" class="button">
                         <p class="sign-in-up-option">Or Sign up With</p>
@@ -88,7 +89,7 @@
                        <p>Create an Account </p>
                        <button class="button transparent" id="sign-up-button">Sign up</button>
                    </div>
-                   <img src="Pics and shapes/undraw_mobile_user_7oqo.svg" class="image">
+                   <img src="Pics and shapes/undraw_mobile_user_7oqo.svg" class="image" alt="mobile-user">
                </div>
 
                <div class="panel right-panel"> <!right-panel>
@@ -97,7 +98,7 @@
                     <p>Sign in</p>
                     <button class="button transparent" id="sign-in-button">Sign in</button>
                 </div>
-                <img src="Pics and shapes/undraw_Tree_swing_646s.svg" class="image">
+                <img src="Pics and shapes/undraw_Tree_swing_646s.svg" class="image" alt="tree-swing">
             </div>
            </div> 
         </div>

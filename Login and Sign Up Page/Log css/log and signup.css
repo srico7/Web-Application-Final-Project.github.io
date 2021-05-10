@@ -106,12 +106,27 @@ form.sign-up-form{
 
 .input-field input::placeholder{
     color: #aaa;
-    font-weight: ;
+    font-weight: 400;
+}
+
+.fas{
+    margin-right: 10px;
 }
 
 .visible{
+    display: inline-block;
     position:absolute;
-    padding-left:150px;
+    padding-left:80px;
+
+}
+.visible-password i{
+    cursor: pointer;
+}
+#togglePassword{
+    padding-left: 120px;
+}
+#togglePassword2{
+    padding-left: 120px;
 }
 a.fogot
 {
@@ -121,6 +136,7 @@ a.fogot
     color: #333;
     font-size: 0.9rem;
     transition: .3s;
+    cursor: pointer;
 }
 
 .button{
@@ -139,7 +155,7 @@ a.fogot
 }
 
 .button:hover{
-    background-color: #4d84e2;
+    background-color: #3c7ef0;
 }
 
 .sign-in-up-option{
@@ -165,11 +181,12 @@ a.fogot
     font-size: 1.1rem;
     border-radius: 50%;
     transition: 0.3s;  
+    cursor: pointer;
 }
 
 .icon:hover{
-    color:#43d6b6;
-    border-color: #3cecc0;
+    color:#4695df;
+    border-color: #4695df;
 }
 
 .panels-content{
@@ -360,7 +377,7 @@ a.fogot
         transform: translateY(-300px);
     }
     .conteiners.sign-up-mode .signin-signup{
-        top: 5%;
+        top: 15%;
         transform: translate(-50%, 0);
         left: 50%;
     }
@@ -371,6 +388,46 @@ a.fogot
         padding-left: 4rem;
         padding-right: 4rem;
         width: auto;
+    }
+
+    #togglePassword{
+        padding-left:30px;
+    }
+
+    #togglePassword2{
+        padding-left:30px;
+    }
+    .image{
+        display: none;
+    }
+
+    .panel .content{
+        padding: 0.5rem 1rem;
+    }
+
+    .conteiners::before{
+        bottom: 72%;
+        left: 50%;
+    }
+
+    .conteiners.sign-up-mode::before{
+        bottom:25%;
+        left: 50%;
+    }
+}
+
+@media (max-width:400px){
+    form{
+        padding-left: 4rem;
+        padding-right: 4rem;
+        width: auto;
+    }
+    
+    #togglePassword{
+        padding-left: 0;
+    }
+    #togglePassword2{
+        padding-left: 0;
     }
 
     .image{
@@ -390,4 +447,10 @@ a.fogot
         bottom:25%;
         left: 50%;
     }
+    .conteiners.sign-up-mode .signin-signup{
+        top: 5%;
+        transform: translate(-50%, 0);
+        left: 50%;
+    }
+}
 }
