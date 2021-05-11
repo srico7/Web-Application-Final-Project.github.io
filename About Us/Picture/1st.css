@@ -1,5 +1,4 @@
 body {
-    background: linear-gradient(-45deg, #50badd, #24f73d);
     font-family: 'Public Sans', sans-serif;
     display: flex;
     justify-content: center;
@@ -8,211 +7,29 @@ body {
     min-height: 100vh;
 }
 
-.down {
-    background: linear-gradient(#50a9dd, #24f73d);
-    background-repeat: repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 4px;
-}
-
 .font {
     font-weight: bold;
     text-align: center;
     color: rgb(8, 8, 8);
-    size: 5px;
-}
-
-.zoom {
-    transition: transform .10s;
-    /* Animation */
-    margin: 0 auto;
-}
-
-.zoom:hover {
-    transform: scale(1.5);
-    /* (150% zoom)*/
-}
-
-.Outer {
-    width: 100%;
-    height: 400px;
-    display: flex;
-}
-
-.Middle {
-    border: 1px solid rgb(184, 54, 54);
-    margin: 20px 20px;
-}
-
-.Inner {
-    width: 100px;
-    height: 100px;
-    background-color: white;
-    margin-top: 10px;
-    margin-left: 10px;
+    font-size: 20px;
 }
 
 .Font1 {
     font-weight: bold;
     text-align: center;
-    color: rgb(41, 226, 24);
-    font-size: 100;
+    color: rgba(65, 28, 28, 0.25);
+    font-size: 100px;
     text-shadow: 2px 2px 5px red;
 }
 
-.blob {
-    texr-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-    transform: scale(1);
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% {
-        transform: scale(0.95);
-        text-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-    }
-    70% {
-        transform: scale(1);
-        text-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-    }
-    100% {
-        transform: scale(0.95);
-        text-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    }
-}
-
-#div1 {
-    background: linear-gradient(-45deg, #50badd, #24f73d);
-    background-color: yellow;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-#div2 {
-    background-color: orange;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-#div3 {
-    background-color: blue;
-}
-
-#div4 {
-    background-color: #3bbf42;
-}
-
-#div5 {
-    background-color: #df1d7e;
-}
-
-.Top {
-    background-color: #9ce416;
-    width: 100%;
-    height: 180px;
-    border: 1px solid rgb(116, 24, 192);
-    background-size: cover;
-}
-
-.Trans {
-    opacity: 0.5;
-    width: 95%;
-    height: 150px;
-    margin-top: 20px;
-    margin-left: 40px;
-    background-color: rgb(223, 135, 176);
-    background-image: url(forest.jpg);
-}
-
-.Img {
-    border-radius: 50%;
-    width: 220px;
-    height: 300px;
-    margin-top: auto;
-}
-
-.Img {
-    width: 225;
-    height: 225;
-    background-color: red;
-    position: relative;
-    animation-name: example;
-    animation-duration: 8s;
-    animation-iteration-count: 10;
-}
-
-a {
-    width: 150px;
-    height: 60px;
-    background-color: red;
-    position: relative;
-    animation-name: example;
-    animation-duration: 8s;
-    animation-iteration-count: 10;
-}
-
-@keyframes example {
-    0% {
-        background-color: red;
-        left: 0px;
-        top: 0px;
-    }
-    25% {
-        background-color: yellow;
-        left: 10px;
-        top: 0px;
-    }
-    50% {
-        background-color: blue;
-        left: 10px;
-        top: 10px;
-    }
-    75% {
-        background-color: green;
-        left: 0px;
-        top: 10px;
-    }
-    100% {
-        background-color: red;
-        left: 0px;
-        top: 0px;
-    }
-}
-
-@import url(https://fonts.google.com/specimen/Poppins);
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+.OUR {
+    padding: 2px 0px;
 }
 
 section {
     position: relative;
-}
-
-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
+    background-color: #6f6c77;
     width: 100%;
-    height: 100%;
-    background: linear-gradient(#f00, #f0f);
-    clip-path: circle(30% at right 70%);
-}
-
-section::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(#2196f3, #e91e63);
-    clip-path: circle(20% at 10% 10%);
 }
 
 .container {
@@ -228,9 +45,9 @@ section::after {
     position: relative;
     width: 300px;
     height: 400px;
-    background: rgba(255, 255, 255, 0.05);
+    background: black;
     margin: 20px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 35px rgba(25, 184, 25, 0.2);
     border-radius: 15px;
     display: flex;
     justify-content: center;
