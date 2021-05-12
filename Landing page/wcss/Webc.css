@@ -25,6 +25,35 @@ a, a:visited, a:hover{
    
 }
 
+.banner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.banner .vcontent{
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    color: aliceblue;
+
+
+}
+
 /* Flexbox */
 .flex{
     display: flex;
@@ -73,6 +102,7 @@ nav {
     background-color:whitesmoke ;
     padding-top: 1.0625rem;
     padding-bottom: 1.0625rem;
+    z-index: 2;
 }
 
 .container{
@@ -117,6 +147,7 @@ nav {
 .header .overlay{
     opacity: 0;
     position: fixed;
+    z-index: 2;
     top: 0px;
     right: 0px;
     bottom: 0px;
@@ -127,6 +158,7 @@ nav {
 
 .header .h_menu{
     position: absolute;
+    z-index: 2;
     width: calc(100% - 3rem);
     left: 50%;
     transform: translateX(-50%);
@@ -138,10 +170,23 @@ nav {
 
 .header .h_menu a{
 
-    color: darkblue;
+    color: darkslategray;
     padding: 0.625rem;
     display: block;
     text-align: center;
+}
+
+.glass{
+    position: relative;
+    z-index: 3;
+    width: 400px;
+    height: 540px;
+    padding-left: 24px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 /*Buttons*/
 
