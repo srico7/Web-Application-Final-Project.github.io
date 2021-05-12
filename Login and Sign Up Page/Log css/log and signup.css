@@ -56,13 +56,13 @@ form{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 5rem;
+    padding: 0 5rem 5rem 2rem;
     overflow: hidden;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    transition: 0.2s 0.7s ease-in-out;
+    transition: 0.2s 0.9s ease-in-out;
+    
 }
-
 form.sign-in-form{
     z-index: 2;
 }
@@ -75,7 +75,6 @@ form.sign-up-form{
     color: #444;
     margin-bottom: 10px;
 }
-
 .input-field{
     max-width: 380px;
     width: 100%;
@@ -103,7 +102,6 @@ form.sign-up-form{
     font-size: 1rem;
     color: black;
 }
-
 .input-field input::placeholder{
     color: #aaa;
     font-weight: 400;
@@ -113,21 +111,12 @@ form.sign-up-form{
     margin-right: 10px;
 }
 
-.visible{
-    display: inline-block;
-    position:absolute;
-    padding-left:80px;
-
-}
-.visible-password i{
+i.visible{
     cursor: pointer;
-}
-#togglePassword{
+    position: absolute;
     padding-left: 120px;
 }
-#togglePassword2{
-    padding-left: 120px;
-}
+    
 a.fogot
 {
     display:block;
@@ -320,6 +309,10 @@ a.fogot
         transition: 1s 08.s ease-in-out;
 
     }
+    i.visible{
+        position: absolute;
+        padding-left: 120px;
+    }
     .panels-content{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr 1fr;
@@ -389,13 +382,20 @@ a.fogot
         padding-right: 4rem;
         width: auto;
     }
-
-    #togglePassword{
-        padding-left:30px;
+    .sign-in-form{
+        height: 360px;
+        top: 20%;
+        padding-bottom: 0px;
     }
-
-    #togglePassword2{
-        padding-left:30px;
+    .sign-up-form{
+        padding-bottom: 0px;
+    }
+    .visible-password input{
+        width: 190px;
+    }
+    i.visible{
+        position: absolute;
+        padding-left: 10px;
     }
     .image{
         display: none;
@@ -406,12 +406,17 @@ a.fogot
     }
 
     .conteiners::before{
-        bottom: 72%;
+        bottom: 75%;
         left: 50%;
     }
 
     .conteiners.sign-up-mode::before{
         bottom:25%;
+        left: 50%;
+    }
+    .conteiners.sign-up-mode .signin-signup{
+        top: 5%;
+        transform: translate(-50%, 0);
         left: 50%;
     }
 }
@@ -420,16 +425,17 @@ a.fogot
     form{
         padding-left: 4rem;
         padding-right: 4rem;
+        height: 360px;
         width: auto;
     }
     
-    #togglePassword{
-        padding-left: 0;
+    .visible-password input{
+        width: 190px;
     }
-    #togglePassword2{
-        padding-left: 0;
+    i.visible{
+        position: absolute;
+        padding-left: 10px;
     }
-
     .image{
         display: none;
     }
