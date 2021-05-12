@@ -7,28 +7,14 @@ body {
     min-height: 100vh;
 }
 
-.font {
-    font-weight: bold;
-    text-align: center;
-    color: rgb(8, 8, 8);
-    font-size: 20px;
-}
-
-.Font1 {
-    font-weight: bold;
-    text-align: center;
-    color: rgba(65, 28, 28, 0.25);
-    font-size: 100px;
-    text-shadow: 2px 2px 5px red;
-}
-
-.OUR {
-    padding: 2px 0px;
+img {
+    width: 100%;
+    height: 200px;
 }
 
 section {
     position: relative;
-    background-color: #6f6c77;
+    background-color: white;
     width: 100%;
 }
 
