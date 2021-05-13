@@ -56,7 +56,7 @@ form{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 5rem 5rem 2rem;
+    padding: 5rem 0 5rem 0;
     overflow: hidden;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -106,7 +106,6 @@ form.sign-up-form{
     color: #aaa;
     font-weight: 400;
 }
-
 .fas{
     margin-right: 10px;
 }
@@ -292,7 +291,6 @@ a.fogot
     .conteiners::before{
         width: 1500px;
         height: 1500px;
-        /* */
         left: 30%;
         bottom: 68%;
         transform: translate(-50%);
@@ -419,44 +417,4 @@ a.fogot
         transform: translate(-50%, 0);
         left: 50%;
     }
-}
-
-@media (max-width:400px){
-    form{
-        padding-left: 4rem;
-        padding-right: 4rem;
-        height: 360px;
-        width: auto;
-    }
-    
-    .visible-password input{
-        width: 190px;
-    }
-    i.visible{
-        position: absolute;
-        padding-left: 10px;
-    }
-    .image{
-        display: none;
-    }
-
-    .panel .content{
-        padding: 0.5rem 1rem;
-    }
-
-    .conteiners::before{
-        bottom: 72%;
-        left: 50%;
-    }
-
-    .conteiners.sign-up-mode::before{
-        bottom:25%;
-        left: 50%;
-    }
-    .conteiners.sign-up-mode .signin-signup{
-        top: 5%;
-        transform: translate(-50%, 0);
-        left: 50%;
-    }
-}
 }

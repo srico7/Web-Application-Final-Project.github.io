@@ -9,8 +9,6 @@ const togglePassword3 = document.querySelector("#togglePassword3");
 const password3 = document.querySelector("#password3");
 
 
-
-
 sign_up_button.addEventListener('click', function () {
     conteiners.classList.add("sign-up-mode");
 });
@@ -30,18 +28,20 @@ togglePassword2.addEventListener('click', function (e) {
     password2.setAttribute('type', type);
     this.classList.toggle('fa-eye-slash');
 });
-
 togglePassword3.addEventListener('click', function (e) {
     const type = password3.getAttribute('type') === 'password' ? 'text' : 'password';
     password3.setAttribute('type', type);
     this.classList.toggle('fa-eye-slash');
 });
 
-function Validate() {
-    var sign_up_password = document.getElementById("password2").value;
-    var confirmPassword = document.getElementById("password3").value;
-    if (ign_up_password != confirmPassword) {
-        alert("Passwords do not match.");
+
+
+function validatePassword() {
+    var password2 = document.getElementById("password2").value;
+    var password3 = document.getElementById("password3").value;
+
+    if(password2 != password3) {
+        alert("Password does not match");
         return false;
     }
     return true;
