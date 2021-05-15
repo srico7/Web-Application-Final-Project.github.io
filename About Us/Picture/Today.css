@@ -13,7 +13,7 @@ body {
 }
 
 .about {
-    background: url(https://live.staticflickr.com/5640/21431225468_19c71069d0_b.jpg) no-repeat left;
+    background: url(hands.jpg) no-repeat left;
     background-color: #fdfbfb;
     overflow: hidden;
 }
@@ -21,13 +21,12 @@ body {
 .inner-section {
     width: 55%;
     float: right;
-    background-color: #0ce9e9;
+    background-color: rgb(243, 239, 12);
     padding: 140px;
     box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
 }
 
-.inner-section h1 {
-    margin-bottom: 80px;
+.inner-section h3 {
     font-size: 30px;
     font-weight: 900;
 }

@@ -1,18 +1,13 @@
 :root {
-    --primary: #90ff90;
-}
-
-body {
-    background-color: #1b1b1b;
-    color: white;
+    --primary: #0d0e0d;
 }
 
 .header {
     text-align: center;
     margin: auto;
     max-width: 50vh;
-    padding-block: 48px;
-    margin-bottom: 48px;
+    padding-block: 18px;
+    margin-bottom: 18px;
     border-bottom: 2px dashed var(--primary);
     color: var(--primary);
     font-size: 32px;
@@ -27,7 +22,7 @@ section {
 }
 
 .team {
-    width: 320px;
+    width: 350px;
     height: 480px;
     overflow: hidden;
     margin: 8px;
@@ -55,7 +50,7 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    width: 320px;
+    width: 350px;
     height: 480px;
     border-radius: 16px;
     z-index: 3;
