@@ -1,3 +1,18 @@
 body{
     font-family: 'Public Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header{
+    width: 70%;
+    margin: auto;
+}
+
+header h1{
+    margin: 0;
+    font-size: 50px;
+    color: rgb(52, 73, 1);
+    font-weight: 500;
 }
