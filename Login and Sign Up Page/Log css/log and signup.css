@@ -307,6 +307,7 @@ a.fogot
         transition: 1s 08.s ease-in-out;
 
     }
+    
     i.visible{
         position: absolute;
         padding-left: 120px;
@@ -359,7 +360,7 @@ a.fogot
 
     .conteiners.sign-up-mode:before{
         transform: translate(-50%, 100% );
-        bottom:30%;
+        bottom:25%;
         right: initial;
     }
 
@@ -376,19 +377,16 @@ a.fogot
 /*Mobile Size Mode*/
 @media (max-width:570px){
     form{
-        padding-left: 4rem;
-        padding-right: 4rem;
+        padding:0 4rem 0 4rem;
         width: auto;
+        height:auto;
     }
     .sign-in-form{
         height: 360px;
         top: 20%;
         padding-bottom: 0px;
     }
-    .sign-up-form{
-        padding-bottom: 0px;
-    }
-    .visible-password input{
+    .input-field input{
         width: 190px;
     }
     i.visible{
