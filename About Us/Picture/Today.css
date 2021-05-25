@@ -9,32 +9,28 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f1f1f1;
 }
 
 .about {
-    background: url(hands.jpg) no-repeat left;
-    background-color: #fdfbfb;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROR3a2uULm-J2S2JQEcjMWCmdyDIo2BfbHiA&usqp=CAU) no repeat left;
     overflow: hidden;
 }
 
 .inner-section {
     width: 55%;
     float: right;
-    background-color: #e9890c;
-    padding: 140px;
+    color: teal;
     box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
 }
 
 .inner-section h3 {
     font-size: 30px;
-    font-weight: 900;
+    font-weight: 9000;
 }
 
 .text {
-    font-size: 13px;
-    color: #545454;
-    line-height: 30px;
+    font-size: 53px;
+    line-height: 90px;
     text-align: justify;
     margin-bottom: 40px;
 }

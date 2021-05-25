@@ -27,8 +27,8 @@ section {
 }
 
 .team {
-    width: 320px;
-    height: 480px;
+    width: 260px;
+    height: 420px;
     overflow: hidden;
     margin: 8px;
     border: 2px solid var(--primary);
@@ -55,8 +55,8 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    width: 320px;
-    height: 480px;
+    width: 260px;
+    height: 420px;
     border-radius: 16px;
     z-index: 3;
     object-fit: cover;
@@ -64,8 +64,8 @@ section {
 }
 
 .team:hover img {
-    width: 200px;
-    height: 280px;
+    width: 160px;
+    height: 220px;
     border: 2px solid var(--primary);
     left: 60px;
     top: 60px;
