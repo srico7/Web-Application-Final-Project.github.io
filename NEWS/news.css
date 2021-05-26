@@ -46,3 +46,22 @@ header h1{
 .news-1 h2{
     background-color: darkblue;
 }
+
+.carsusel{
+    position: relative;
+}
+
+.news-container{
+    position: relative;
+}
+
+.news-text{
+    font-size: 18px;
+    position: absolute;
+    color: white;
+    z-index: 2;
+    bottom: 5px;
+    font-weight: bolder;
+    padding: 0 10px;
+    transition-duration: 500ms;
+}
