@@ -65,3 +65,31 @@ header h1{
     padding: 0 10px;
     transition-duration: 500ms;
 }
+
+.featured{
+    flex: 2;
+}
+
+.latest{
+    flex: 1;
+}
+
+.news-1{
+    flex: 1;
+}
+
+.news-container:hover{
+    cursor: pointer;
+}
+
+.news-container:hover > .news-text{
+    bottom: 10px;
+}
+
+.carousel-item img{
+    height: 350px;
+}
+
+.news-container img{
+    height: 175px;
+}
