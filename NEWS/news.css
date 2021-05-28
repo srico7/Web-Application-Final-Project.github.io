@@ -93,3 +93,35 @@ header h1{
 .news-container img{
     height: 175px;
 }
+
+/* framework 2 css part */
+
+.sdgnews-2 h1{
+    margin: 25px auto;
+    max-width: 550px;
+    position: relative;
+}
+
+.sdgnews-2 h1:before{
+    background-color: black;
+    display: block;
+    width: 195px;
+    height: 2px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: -1;
+}
+
+.sdgnews-2 h1 :after{
+    background-color: black;
+    display: block;
+    width: 195px;
+    height: 2px;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: -1;
+}
