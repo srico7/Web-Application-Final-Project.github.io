@@ -176,26 +176,18 @@ nav {
     text-align: center;
 }
 
-.glass{
-    position: relative;
-    z-index: 3;
-    width: 400px;
-    height: 540px;
-    padding-left: 24px;
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur(4px);
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-}
-
 /*footer*/
 
 footer{
-    background-color: rgb(53, 69, 102);
+    background-color:rgb(183, 194, 196);
     color: whitesmoke;
     padding: 2.5rem;
     text-align: center;
+}
+
+footer @include breakpoint-up(large){
+    display:grid;
+    grid-template-columns;
 }
 footer a{
     color: whitesmoke;
@@ -207,25 +199,51 @@ footer a{
 }
 
 .f_social{
-width: 24px;
-height: 10px;
 margin-bottom: 1.875rem;
 }
 
+.f_social a:not(:last-child){
+    display: inline-block;
+    margin-right: 1rem;
+}
+.f_social a img{
+    width: 1.475rem;
+}
 .f_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2.25rem;
 
 }
 
 .f_links2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 1.875rem;
+    line-height: 2.25rem;
 }
 
-.f_button{
-    margin-bottom: 1.875rem;
+.f_button a.button2{
+    padding: 1rem 1.875rem;
+    border: 0;
+    border-radius: 50px;
+    background: linear-gradient(to right,limegreen, rgb(17, 189, 189));    
+    cursor: pointer;
+    color: whitesmoke;
+    transition: opacity 300ms ease-in-out;
+    font-weight: 400;
+    width: 160px;
+    height: 50px;
+}
 
+.f_button a .button2:hover{
+    opacity: 0.75;
 }
 
 .f_copyright{
+    margin-top: 1.875rem;
 
 }
 /*Buttons*/
@@ -297,6 +315,47 @@ margin-bottom: 1.875rem;
     }
     .h_menu{
         display: none;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr)2fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+        "f_logo f_links f_links2 f_button"
+        "f_social f_links f_links2 f_button"; 
+        justify-items: start;
+
+    }
+
+    .f_logo{
+        grid-area: f_logo;
+    }
+
+    .f_social{
+        grid-area: f_social;
+        margin-bottom: 0;
+    }
+    .f_links{
+        grid-area: f_links;
+        align-items: start;
+        margin-left: 2rem;
+        line-height: 3.25rem;
+    }
+    .f_links2{
+        grid-area: f_links2;
+        align-items: start;
+        line-height: 3.25rem;
+    }
+    .f_button{
+        grid-area: f_button;
+        align-items: end;
+        text-align: right;
+        justify-self: end;
+        margin-top: 1rem;
+    }
+    .f_copyright{
+        margin-top: 4.875rem;
+    
     }
 }
 @media (max-width: 650px){
