@@ -188,6 +188,46 @@ nav {
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+
+/*footer*/
+
+footer{
+    background-color: rgb(53, 69, 102);
+    color: whitesmoke;
+    padding: 2.5rem;
+    text-align: center;
+}
+footer a{
+    color: whitesmoke;
+}
+.f_logo img{
+    width: 200px;
+    margin-bottom: 1.875rem;
+
+}
+
+.f_social{
+width: 24px;
+height: 10px;
+margin-bottom: 1.875rem;
+}
+
+.f_links{
+
+}
+
+.f_links2{
+    margin-bottom: 1.875rem;
+}
+
+.f_button{
+    margin-bottom: 1.875rem;
+
+}
+
+.f_copyright{
+
+}
 /*Buttons*/
 
 .button{
