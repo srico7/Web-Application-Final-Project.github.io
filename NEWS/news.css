@@ -94,15 +94,15 @@ header h1{
     height: 175px;
 }
 
-/* framework 2 css part */
+/* sdg news-2 css part */
 
-.sdgnews-2 h1{
+.sdgnews-2 h4{
     margin: 25px auto;
     max-width: 550px;
     position: relative;
 }
 
-.sdgnews-2 h1:before{
+.sdgnews-2 h4:before{
     background-color: black;
     display: block;
     width: 195px;
@@ -114,7 +114,7 @@ header h1{
     z-index: -1;
 }
 
-.sdgnews-2 h1 :after{
+.sdgnews-2 h4 :after{
     background-color: black;
     display: block;
     width: 195px;
