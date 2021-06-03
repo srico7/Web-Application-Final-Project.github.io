@@ -96,6 +96,11 @@ header h1{
 
 /* sdg news-2 css part */
 
+.sdgnews-2{
+    background-color: black;
+    color: white;
+}
+
 .sdgnews-2 h4{
     margin: 25px auto;
     max-width: 550px;
@@ -124,4 +129,27 @@ header h1{
     right: 0;
     top: 50%;
     z-index: -1;
+}
+
+.more-news{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2%;
+    text-align: justify;
+}
+
+.more-news img{
+    width: 100%;
+}
+
+.morenews-1{
+    flex-basis: 35%;
+}
+
+.morenews-2{
+    flex-basis: 35%;
+}
+
+.recent{
+    flex-basis: 25%;
 }
