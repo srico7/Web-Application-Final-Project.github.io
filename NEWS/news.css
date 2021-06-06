@@ -56,7 +56,7 @@ header h1{
 }
 
 .news-text{
-    font-size: 18px;
+    font-size: 16px;
     position: absolute;
     color: white;
     z-index: 2;
@@ -141,6 +141,11 @@ header h1{
 
 .more-news img{
     width: 100%;
+}
+
+.more-news img:hover{
+    transform: scale(1.03);
+    transition: all .4s;
 }
 
 .morenews-1{
@@ -238,5 +243,7 @@ header h1{
 
 .read-more-btn:hover{
     background-color: rgb(160, 157, 157);
+    transform: scale(1.05);
+    transition: all .4s;
 }
 
