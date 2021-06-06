@@ -19,13 +19,12 @@
                         <h2 class="title">Sign in</h2>
                         <div class="input-field">
                             <i class="fas fa-user"></i>
-                            <input type="text" placeholder="username" required>
+                            <input type="text" placeholder="Username" required>
                         </div>
                         <div class="input-field">
                             <div class="visible-password">
                             <i class="fas fa-lock"></i>
-                                <input type="password" name="password" id="password" placeholder="Enter the password" 
-                                minlength="8" required>
+                                <input type="password" name="password" id="password" placeholder="Enter the password" required>
                                 <i class="visible far fa-eye" id="togglePassword"></i>
                             </div>
                         </div>
@@ -52,9 +51,9 @@
                             <i class="fas fa-user"></i>
                             <input type="text" placeholder="Username" required>
                         </div>
-                        <div class="input-field">
+                        <div class="input-field error">
                             <i class="fas fa-envelope"></i>
-                            <input type="email" placeholder="thelifeonland@example.com" required>
+                            <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="email" placeholder="thelifeonland@example.com" required>
                         </div>
                         <div class="input-field">
                             <div class="visible-password">

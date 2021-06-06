@@ -22,8 +22,7 @@ body{
     width: 2000px;
     height: 2000px;
     border-radius: 50%;
-    background: linear-gradient(-45deg, #50badd, #5ED46C ); /* add gradient*/
-    /* */
+    background: linear-gradient(-45deg, #50badd, #5ED46C );
     top: -10%;
     right: 48%;
     transform: translateY(-50%);
@@ -60,7 +59,7 @@ form{
     overflow: hidden;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    transition: 0.2s 0.9s ease-in-out;
+    transition: 0.2s 1s ease-in-out;
     
 }
 form.sign-in-form{
@@ -76,7 +75,7 @@ form.sign-up-form{
     margin-bottom: 10px;
 }
 .input-field{
-    max-width: 380px;
+    max-width: 23rem;
     width: 100%;
     height: 55px;
     background-color: #f0f0f000;
@@ -97,6 +96,7 @@ form.sign-up-form{
     background: none;
     outline: none;
     border: none;
+    width: 75%;
     line-height: 1;
     font-weight: 300;
     font-size: 1rem;
@@ -107,19 +107,19 @@ form.sign-up-form{
     font-weight: 400;
 }
 .fas{
-    margin-right: 10px;
+    margin-right: 0.7rem;
 }
 
 i.visible{
     cursor: pointer;
     position: absolute;
-    padding-left: 120px;
 }
     
 a.fogot
 {
     display:block;
     text-align: right;
+    margin: 10px;
     text-decoration: none;
     color: #333;
     font-size: 0.9rem;
@@ -138,12 +138,12 @@ a.fogot
     color: #fff;
     text-transform: uppercase;
     font-weight: 600;
-    margin: 10px 0;
+    margin: 1rem 0 0 0 ;
     transition: .5s;
 }
 
 .button:hover{
-    background-color: #3c7ef0;
+    background-color: #46bff7;
 }
 
 .sign-in-up-option{
@@ -289,8 +289,8 @@ a.fogot
     }
 
     .conteiners::before{
-        width: 1500px;
-        height: 1500px;
+        width: 1400px;
+        height: 1400px;
         left: 30%;
         bottom: 68%;
         transform: translate(-50%);
@@ -306,11 +306,6 @@ a.fogot
         transform: translate(-50%, -100% );
         transition: 1s 08.s ease-in-out;
 
-    }
-    
-    i.visible{
-        position: absolute;
-        padding-left: 120px;
     }
     .panels-content{
         grid-template-columns: 1fr;
@@ -386,12 +381,14 @@ a.fogot
         top: 20%;
         padding-bottom: 0px;
     }
-    .input-field input{
-        width: 190px;
+    .sign-up-form{
+        padding-top:4rem;
     }
-    i.visible{
-        position: absolute;
-        padding-left: 10px;
+    h2.title{
+        margin: 0;
+    }
+    .input-field{
+        margin: 0;
     }
     .image{
         display: none;
@@ -403,9 +400,52 @@ a.fogot
 
     .conteiners::before{
         bottom: 75%;
+        left: 50%;  
+    }
+    .conteiners.sign-up-mode::before{
+        bottom:25%;
         left: 50%;
     }
+    .conteiners.sign-up-mode .signin-signup{
+        top: 5%;
+        transform: translate(-50%, 0);
+        left: 50%;
+    }
+}
+@media (max-width:400px){
+    form{
+        min-height: 70vh;
+        padding:0 2.5rem 0 2.5rem;
+        width: auto;
+        height:auto;
+    }
+    .sign-in-form{
+        height: 360px;
+        top: 20%;
+        padding-top:2.5rem;
+    }
+    .sign-up-form{
+        padding:1rem 2.5rem;
+    }
+    h2.title{
+        margin: 0;
+    }
+    .input-field{
+        margin: 0;
+    }
+    .image{
+        display: none;
+    }
 
+    .panel .content{
+        padding: 0.5rem 1rem;
+
+    }
+
+    .conteiners::before{
+        bottom: 75%;
+        left: 50%;  
+    }
     .conteiners.sign-up-mode::before{
         bottom:25%;
         left: 50%;
