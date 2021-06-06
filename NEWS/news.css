@@ -21,6 +21,7 @@ header h1{
 
 .sdgnews-1{
     display: flex;
+    flex-wrap: wrap;
     margin: 30px 5%;
 }
 
@@ -143,6 +144,7 @@ header h1{
 /* more news */
 .more-news{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 0 2%;
     text-align: justify;
@@ -159,14 +161,17 @@ header h1{
 
 .morenews-1{
     flex-basis: 35%;
+    flex-wrap: wrap;
 }
 
 .morenews-2{
     flex-basis: 35%;
+    flex-wrap: wrap;
 }
 
 .morenews-3{
     flex-basis: 25%;
+    flex-wrap: wrap;
 }
 
 /* recent news */
@@ -256,3 +261,28 @@ header h1{
     transition: all .4s;
 }
 
+/* responsive codes */
+@media only screen and (max-width: 775px){
+    header h1{
+        font-size: 30px;
+    }
+
+    header p{
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .featured{
+        flex: auto;
+    }
+
+    .more-news, .morenews-1, .morenews-2, .morenews-3{
+        flex-basis: 100%;
+    }
+
+    .recent, .videos{
+        border-width: 0;
+    }
+    
+
+}
