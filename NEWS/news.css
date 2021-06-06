@@ -78,6 +78,15 @@ header h1{
     flex: 1;
 }
 
+.news-container a{
+    color: white;
+    text-decoration: none;
+}
+
+.news-container a:hover{
+    color: rgb(179, 179, 179);
+}
+
 .news-container:hover{
     cursor: pointer;
 }
