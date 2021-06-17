@@ -10,15 +10,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="content box">
+    <div class="content-box">
         <img src="/Subscribe/Image files/undraw_mobile_user_7oqo.svg" alt="illustration">
         <h2>Subscribe Our Page</h2>
         <P>Get Latest News update instantly</P>
         <div class="input-field">
-            <input type="Email" class="mail" placeholder="Enter Your Email Address" required>
-            <button class="btn">Subscribe</button>
+            <form action=""> 
+                <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="email" placeholder="Enter Your Email Address" required>
+                <input type="Submit" class="btn" value="Subscribe">
+            </form>
         </div>
-    
     </div>
 
 
