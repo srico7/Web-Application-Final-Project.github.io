@@ -50,8 +50,24 @@ a, a:visited, a:hover{
     margin: 0 auto;
     text-align: center;
     color: aliceblue;
+}
 
+.loln{
+    display: inline-block;
+    font-family: "Giorgio Sans Bold",AvenirNextCondensed-DemiBold,HelveticaNeue-CondensedBold,"Helvetica Inserat","Franklin Gothic Condensed",Haettenschweiler,Impact,sans-serif-condensed,sans-serif;
+    font-weight: 700;
+    font-size: 16.5rem;
+    color:rgb(32, 168, 168);
 
+}
+
+.lol{
+    display: inline-block;
+    font-size: 5.5rem;
+
+}
+.lol2{
+    margin-right: 12rem;
 }
 
 /* Flexbox */
@@ -185,10 +201,6 @@ footer{
     text-align: center;
 }
 
-footer @include breakpoint-up(large){
-    display:grid;
-    grid-template-columns;
-}
 footer a{
     color: whitesmoke;
 }
@@ -372,6 +384,12 @@ margin-bottom: 1.875rem;
     .menu{
         margin-left: 0.475rem;
     }
+    .lol{
+        font-size: 1.5rem;
+    }
+    .loln{
+        font-size: 10.5rem;
+    }
 }
 
     @media (max-width: 850px){
@@ -385,6 +403,15 @@ margin-bottom: 1.875rem;
         .logo img{
             width: 150px;
             padding: 7px;
+        }
+        .lol{
+            font-size: 1.5rem;
+        }
+        .loln{
+            font-size: 10.5rem;
+        }
+        .lol2{
+            margin-right: 3.5rem;
         }
     }
 
