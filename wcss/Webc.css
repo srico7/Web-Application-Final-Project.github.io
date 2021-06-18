@@ -27,7 +27,7 @@ a, a:visited, a:hover{
 
 .banner{
     width: 100%;
-    height: 100vh;
+    height: 86.4vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,17 +57,23 @@ a, a:visited, a:hover{
     font-family: "Giorgio Sans Bold",AvenirNextCondensed-DemiBold,HelveticaNeue-CondensedBold,"Helvetica Inserat","Franklin Gothic Condensed",Haettenschweiler,Impact,sans-serif-condensed,sans-serif;
     font-weight: 700;
     font-size: 16.5rem;
-    color:rgb(32, 168, 168);
+    color:rgba(37, 172, 154,0.85);
 
 }
 
 .lol{
     display: inline-block;
     font-size: 5.5rem;
+    margin-bottom: 1rem;
 
 }
 .lol2{
-    margin-right: 12rem;
+    margin-right: 13rem;
+}
+
+.lol3{
+    margin-top: -3rem;
+    background-color: rgba(37, 172, 154,0.3);
 }
 
 /* Flexbox */
@@ -203,6 +209,7 @@ footer{
 
 footer a{
     color: whitesmoke;
+    font-size: 0.9375rem;
 }
 .f_logo img{
     width: 200px;
@@ -256,6 +263,8 @@ margin-bottom: 1.875rem;
 
 .f_copyright{
     margin-top: 1.875rem;
+    font-size: 0.9375rem;
+    opacity: 0.7;
 
 }
 /*Buttons*/
