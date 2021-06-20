@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,input,
+textarea{
+    font-family: 'Public Sans', sans-serif; ;
+}
+.content{
+   position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color:#fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    width: 100%;
+    max-width: 820px;
+    background-colo:#fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contactUs-form{
+    background-color: #1abc9c;
+    position:relative;
+}
+.contactUs-form::before{
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-color: #1abc9c;
+    transform: rotate(45deg);
+    top: 50px;
+    left: -13px;
+}
+
+form{
+    padding: 2.3rem 2.2rem;
+    z-index: 10;
+    overflow: hidden;
+    position: relative;
+}
+
+.title{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+}
+
+.input-field{
+    position: relative;
+    margin: 1rem 0;
+}
+
+.inputs{
+    width: 100%;
+    outline: none;
+    border: 2px solid rgb(46, 45, 45);
+    background: none;
+    padding: 0.6rem 1.5rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+textarea.inputs{
+    padding: .8rem 1.2rem;
+    min-height: 150px;
+    border-radius: 22px;
+    resize: none;
+    overflow: auto;
+}
+.input-field label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    padding: 0 .4rem;
+    font-size: 1rem;
+    font-weight: 400;
+    pointer-events: none;
+    z-index: 100;
+    transition: .5s;
+}
+.input-field.text-field label{
+    top: 1rem;
+    transform: translateY(0);
+}
+.button{
+    padding: .6rem 1.3rem;
+    background-color: #fff;
+    border: 2px solid #fff;
+    font-size: 1rem;
+    line-height: 1;
+    border-radius: 25px;
+    outline: none;
+    color: black;
+    cursor: pointer;
+    transition: .3s;
+    margin: 0;
+}
+
+.button:hover{
+    background-color: #1abc9c;
+    color: #fff;
+}
