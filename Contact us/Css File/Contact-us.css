@@ -73,6 +73,7 @@ form{
     background: none;
     padding: 0.6rem 1.5rem;
     color: #fff;
+    background-color: transparent;
     font-weight: 500;
     font-size: 1rem;
     letter-spacing: 0.5px;
@@ -93,6 +94,7 @@ textarea.inputs{
     left: 15px;
     transform: translateY(-50%);
     padding: 0 .4rem;
+    color: #fff;
     font-size: 1rem;
     font-weight: 400;
     pointer-events: none;
@@ -115,9 +117,51 @@ textarea.inputs{
     cursor: pointer;
     transition: .3s;
     margin: 0;
+    text-transform: uppercase;
 }
 
 .button:hover{
     background-color: #1abc9c;
     color: #fff;
+}
+
+.input-field span{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    padding: 1rem .4rem;
+    color: transparent;
+    pointer-events: none;
+    z-index: 50;
+}
+
+.input-field span::before,
+.input-field span::after{
+    content: "";
+    position: absolute;
+    width: 10%;
+    opacity: 0;
+    transition: 0.2s;
+    height: 9px;
+    background-color:#1abc9c;
+    transform: translateY(40%);
+}
+.input-field span::before{
+    left: 50%;
+}
+.input-field span::after{
+    right: 50%;
+}
+.input-field.focus label{
+    top: 0;
+    transform: translateY(-50%);
+    left: 25px;
+    font-size: 1rem;
+}
+.input-field.focus span::before,
+.input-field.focus span::after{
+    width: 55%;
+    opacity: 1;
 }
