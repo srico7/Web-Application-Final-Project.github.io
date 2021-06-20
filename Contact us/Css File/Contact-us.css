@@ -33,7 +33,7 @@ textarea{
 }
 
 .contactUs-form{
-    background-color: #1abc9c;
+    background: linear-gradient(45deg, #1cd4af, #159b80 );
     position:relative;
 }
 .contactUs-form::before{
@@ -106,7 +106,7 @@ textarea.inputs{
     transform: translateY(0);
 }
 .button{
-    padding: .6rem 1.3rem;
+    padding: .5rem 1.2rem;
     background-color: #fff;
     border: 2px solid #fff;
     font-size: 1rem;
@@ -128,7 +128,7 @@ textarea.inputs{
 .input-field span{
     position: absolute;
     top: 0;
-    left: 20px;
+    left: 25px;
     transform: translateY(-50%);
     font-size: 1rem;
     padding: 1rem .4rem;
@@ -144,9 +144,9 @@ textarea.inputs{
     width: 10%;
     opacity: 0;
     transition: 0.2s;
-    height: 9px;
+    height: 8px;
     background-color:#1abc9c;
-    transform: translateY(40%);
+    transform: translateY(50%);
 }
 .input-field span::before{
     left: 50%;
@@ -162,7 +162,7 @@ textarea.inputs{
 }
 .input-field.focus span::before,
 .input-field.focus span::after{
-    width: 55%;
+    width: 50%;
     opacity: 1;
 }
 
@@ -263,9 +263,67 @@ textarea.inputs{
 
 /*Responsive Create*/
 
-/*@media(max-width: 850px){
+@media(max-width: 850px){
     .form{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
+    }
 
+    .info-contact::before{
+        bottom: initial;
+        top: -75px;
+        right: 65px;
+        transform: scale(0.95);
+    }
+    .contactUs-form::before{
+        top: -13px;
+        left: initial;
+        right: 70px;
+        background:#159b80 ;
+    }
+    .l-circle{
+        bottom: 75%;
+        transform: scale(0.9) translate(-40%, 30%);
+        right: 50%;
+    }
+    .paragraph{
+        margin: 1rem 0 1.5rem 0;
+    }
+    .social-platform{
+        padding: 1.5rem 0 0 0;
+    }
+}
+@media(max-width: 480px){
+    .content{
+        padding: 1.5rem;
+    }
+    .info-contact::before{
+        display: none;
+    }
+    .l-circle{
+        display: none;
+    }
+    form,
+    .info-contact{
+        padding: 1.7rem 1.6rem;
+    }
+    .paragraph,.info-mail,.social-platform p{
+        font-size: 0.8rem;
+    }
+    .title{
+        font-size: 1.15rem;
+    }
+    #e-icon{
+        width: 23px;
+    }
+    .s-icon a{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .inputs{
+        padding: .45rem 1.2rem;
+    }
+    .button{
+        padding: .45rem 1.2rem;
     }
 }
