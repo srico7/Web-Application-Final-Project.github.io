@@ -119,8 +119,8 @@ a, a:visited, a:hover{
     }
 
 .header .logo img{
-    width: 200px;
-    padding: 10px;
+    width: 100px;
+    height: 70px;
 }
 
 nav {
@@ -134,6 +134,8 @@ nav {
 .container{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
 }
 
 
@@ -260,6 +262,7 @@ footer{
     background-color:rgb(183, 194, 196);
     color: whitesmoke;
     padding: 2.5rem;
+    padding-bottom: 0.5rem;
     text-align: center;
 }
 
@@ -268,7 +271,8 @@ footer a{
     font-size: 0.9375rem;
 }
 .f_logo img{
-    width: 200px;
+    width: 100px;
+    height: 70px;
     margin-bottom: 1.875rem;
 
 }
