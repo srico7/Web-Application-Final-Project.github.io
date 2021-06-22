@@ -352,13 +352,24 @@ margin-bottom: 1.875rem;
 }
 .f_social a img{
     width: 1.275rem;
+    transition: all 150ms ease-in-out;
+}
+.f_social a img:hover{
+    transform: scale(1.1);
 }
 .f_links{
     display: flex;
     flex-direction: column;
     align-items: center;
     line-height: 2.25rem;
+}
+.f_links a{
+    transition: color 300ms ease-in-out;
 
+}
+
+.f_links a:hover{
+    color: darkcyan;
 }
 
 .f_links2{
@@ -367,6 +378,14 @@ margin-bottom: 1.875rem;
     align-items: center;
     margin-bottom: 1.875rem;
     line-height: 2.25rem;
+}
+.f_links2 a{
+    transition: color 300ms ease-in-out;
+
+}
+
+.f_links2 a:hover{
+    color: darkcyan;
 }
 
 a.button2{
@@ -501,6 +520,8 @@ margin-bottom: 2.25rem;
         grid-area: f_social;
         margin-bottom: 0;
     }
+
+
     .f_links{
         grid-area: f_links;
         align-items: start;
