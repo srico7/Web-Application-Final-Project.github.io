@@ -2,6 +2,7 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: 'Public Sans', sans-serif;
+    overflow-x: hidden;
 }
 .img-1 {
     width: 100%;
@@ -191,6 +192,171 @@ body{
     margin: 10px;
     padding: 10px 40px 10px 1px;
 }
+
+@media (max-width: 850px) {
+    .img-1{
+        background-size: cover; 
+        width: 100%;
+    }
+    .row1 {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        background-size: cover;
+        background-position: 50% 50%;
+        width: 100%;
+    }
+    .col1{
+        width: 100%;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    .col1-1{
+        width: 100%;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
+    .row2 {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr); 
+        background-size: cover;
+        width: 100%;
+    }
+    .col2{
+        width: 100%;
+        background-size: cover;
+    }
+    .col2-1{
+        width: 100%;
+        background-size: cover;
+    }
+    .row3 {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        background-size: cover;
+    }
+    .col3{
+        width: 100%;
+    }
+    .col3-1{
+        width: 100%;
+    }
+    .row4 {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        background-size: cover;
+    }
+    .col4{
+        width: 100%;
+    }
+    .col4-1{
+        width: 100%;
+    }
+    .row5 {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        background-size: cover;
+    }
+    .col5{
+        width: 100%;
+    }
+    .col5-1{
+        width: 100%;
+    }
+    .row6 {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        background-size: cover;
+    }
+    .col6{
+        width: 100%;
+    }
+    .col6-1{
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    .img-1 {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr); 
+        background-size: cover; 
+        width: 100%;
+        background-position: 50% 50%;
+    }
+    .row1 {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        background-size: cover;
+        width: 100%;
+    }
+    .col1{
+        width: 100%;
+        background-position: 50% 50%;
+    }
+    .col1-1{
+        width: 100%;
+        background-position: 50% 50%;
+    }
+
+    .row2 {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr); 
+        background-size: cover;
+        width: 100%;
+    }
+    .col2{
+        width: 100%;
+    }
+    .col2-1{
+        width: 100%;
+    }
+    .row3 {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        background-size: cover;
+    }
+    .col3{
+        width: 100%;
+    }
+    .col3-1{
+        width: 100%;
+    }
+    .row4 {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        background-size: cover;
+    }
+    .col4{
+        width: 100%;
+    }
+    .col4-1{
+        width: 100%;
+    }
+    .row5 {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        background-size: cover;
+    }
+    .col5{
+        width: 100%;
+    }
+    .col5-1{
+        width: 100%;
+    }
+    .row6 {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        background-size: cover;
+    }
+    .col6{
+        width: 100%;
+    }
+    .col6-1{
+        width: 100%;
+    }
+  }
+        
 /*    @media (max-width:870px){
     .check{
         min-height: 800px;

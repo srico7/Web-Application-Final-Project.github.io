@@ -2,9 +2,10 @@ body.scroll{
     overflow: hidden;
 }
 a, a:visited, a:hover{
-    text-decoration: none;
-   
-}/* Flexbox */
+    text-decoration: none;  
+}
+
+/* Flexbox */
 .flex{
     display: flex;
 }
@@ -230,8 +231,6 @@ a.button2{
     color: whitesmoke;
     transition: opacity 300ms ease-in-out;
     font-weight: 400;
-    width: 160px;
-    height: 50px;
 }
 .button:hover{
     opacity: 0.75;
