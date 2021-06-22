@@ -180,11 +180,16 @@ body{
 .form6-1{
     border: 2px solid red;
     margin: 10px;
-    padding: 10px 240px 10px 1px;
+    padding: 10px 40px 10px 1px;
 }
 #form6-11{
-    padding: 0px 251px 40px 0px;
+    padding: 0px 100px 40px 0px;
     margin-right: 100px;
+}
+#form6-111{
+    border: 2px solid red;
+    margin: 10px;
+    padding: 10px 40px 10px 1px;
 }
 /*    @media (max-width:870px){
     .check{
