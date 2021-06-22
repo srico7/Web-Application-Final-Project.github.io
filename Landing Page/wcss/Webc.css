@@ -205,6 +205,50 @@ nav {
     text-align: center;
 }
 
+.l-circle{
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    border-radius:50%;
+
+    background: linear-gradient(to bottom, #1cd4af, #159b80);
+
+    bottom: 50%;
+
+    right: 50%;
+
+    transform: translate(175%, 147%);
+    z-index: -1;
+    opacity: 0.5;
+
+}
+
+
+
+.l-circle::after{
+
+    content:"";
+
+    position: absolute;
+
+    width: 360px;
+
+    height: 360px;
+
+    background-color: #fff;
+
+    border-radius: 50%;
+
+    top: calc(50% - 180px);
+
+    left: calc(50% - 180px);
+
+}.
+
 /*feature set*/
 
 .features{
@@ -423,8 +467,6 @@ a.button2{
     color: whitesmoke;
     transition: opacity 300ms ease-in-out;
     font-weight: 400;
-    width: 160px;
-    height: 50px;
 }
 .button:hover{
     opacity: 0.75;
