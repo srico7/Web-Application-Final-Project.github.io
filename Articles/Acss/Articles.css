@@ -188,19 +188,6 @@ body{
     margin: 10px 0px 10px 0px;
     padding: 10px 30px 10px 1px;
 }
-#form6-1s{
-    border: 3px solid red;
-    margin: 10px 0px 10px 0px;
-    padding: 10px 30px;
-    background-color: white;
-    border-radius: 20px;
-    color: black;
-    font-weight: bolder;
-    font-size: 15px;
-}
-#form6-1s:hover{
-    font-size: 17px;
-
 #form6-11{
     padding: 0px 40px 40px 0px;
     margin-right: 0px;
