@@ -35,7 +35,10 @@ body {
 .inner-section h3 {
     font-size: 30px;
     font-weight: 9000;
-    color: greenyellow;
+    color: rgb(103, 104, 104);
+    
+    line-height: 5rem;
+    
 }
 
 .text {
@@ -57,10 +60,11 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    margin-bottom: 3rem;
 }
 
 .Our_Team {
-    color: greenyellow;
+    color: rgb(103, 104, 104);
     font-size: 500%;
     font-weight: bold;
 }
@@ -70,7 +74,6 @@ section {
     height: 200px;
     overflow: hidden;
     margin: 8px;
-    border: 2px solid var(--primary);
     border-radius: 16px;
     position: relative;
     background-color: #ffffff34;
@@ -95,7 +98,7 @@ section {
     top: 0;
     left: 0;
     width: 200px;
-    height: 200px;
+    height: 240px;
     border-radius: 16px;
     z-index: 3;
     object-fit: cover;
@@ -105,9 +108,8 @@ section {
 .team:hover img {
     width: 120px;
     height: 120px;
-    border: 2px solid var(--primary);
     left: 40px;
-    top: 20px;
+    top: 5px;
 }
 
 .team .info {
@@ -118,10 +120,9 @@ section {
     right: 0;
     z-index: 2;
     color: #363636;
-    padding: 1px;
-    border-top: 1px solid var(--primary);
+    padding: 6px;
     border-radius: 50% 50% 0px 0px;
-    padding-top: 1px;
+    padding-top: 0px;
     text-align: center;
     transform: scale(2)
 }
