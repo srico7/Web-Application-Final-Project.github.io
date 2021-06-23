@@ -121,7 +121,6 @@ a, a:visited, a:hover{
 
 .header .logo img{
     width: 100px;
-    height: 70px;
 }
 
 nav {
@@ -203,6 +202,11 @@ nav {
     padding: 0.625rem;
     display: block;
     text-align: center;
+    transition: all 150ms ease-in-out;
+}
+
+.header .h_menu a:hover{
+    transform: scale(1.05);
 }
 
 .l-circle{
@@ -221,8 +225,8 @@ nav {
 
     right: 50%;
 
-    transform: translate(175%, 147%);
-    z-index: -1;
+    transform: translate(110%, 260%);
+    z-index: 0;
     opacity: 0.5;
 
 }
@@ -247,14 +251,13 @@ nav {
 
     left: calc(50% - 180px);
 
-}.
+}
 
 /*feature set*/
 
 .features{
     background-color: rgb(253, 253, 253);
     box-align: center;
-
 }
 .f_grid{
     display:flex;
@@ -328,6 +331,7 @@ nav {
     overflow: hidden;
     box-shadow: 0px 3px 12px rgba(0,0,0,0.15);
     transition: all 150ms ease-in-out;
+    z-index: 1;
 
 }
 .a_item:hover{
@@ -628,6 +632,9 @@ margin-bottom: 2.25rem;
         .a_text{
             padding: 1.875rem 1.5625rem;
             
+        }
+        .l-circle{
+            display: none;
         }
   
     }
