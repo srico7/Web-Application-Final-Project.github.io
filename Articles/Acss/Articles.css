@@ -172,30 +172,29 @@ body{
     background-size: cover;
     background-position: 50% 50%;
     background-color: #292f33;
+    color: wheat;
+    font-size: 50px;
+    text-align: center;
     /*background: linear-gradient(to right,limegreen, rgb(17, 189, 189));*/
     /*background: linear-gradient(-45deg, #50badd, #24f73d  );*/
 }
-.col6-1-h1{
-    color: wheat;
-    font-size: 70px;
-    text-align: center;
-    
-}
+
+
 .form6{
     margin: 50px 100px;
 }
 .form6-1{
     border: 2px solid red;
-    margin: 10px;
-    padding: 10px 40px 10px 1px;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 30px 10px 1px;
 }
 #form6-11{
-    padding: 0px 100px 40px 0px;
-    margin-right: 100px;
+    padding: 0px 40px 40px 0px;
+    margin-right: 0px;
 }
 #form6-111{
     border: 2px solid red;
-    margin: 10px;
+    margin:  10px 0px 10px 0px;
     padding: 10px 40px 10px 1px;
 }
 
@@ -357,10 +356,18 @@ body{
     }
     .col6{
         width: 100%;
+        margin-left: -80px;
+        padding-right: -50px;
     }
     .col6-1{
         width: 100%;
+        background-size: cover;
+        background-position: 50% 50%;
+        margin-left: -60px;
+        margin-right: 40px;
+        font-size: 30px;
     }
+    
   }
         
 /*    @media (max-width:870px){
