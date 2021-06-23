@@ -66,8 +66,8 @@ section {
 }
 
 .team {
-    width: 240px;
-    height: 410px;
+    width: 200px;
+    height: 200px;
     overflow: hidden;
     margin: 8px;
     border: 2px solid var(--primary);
@@ -94,8 +94,8 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    width: 260px;
-    height: 420px;
+    width: 200px;
+    height: 200px;
     border-radius: 16px;
     z-index: 3;
     object-fit: cover;
@@ -103,11 +103,11 @@ section {
 }
 
 .team:hover img {
-    width: 160px;
-    height: 220px;
+    width: 120px;
+    height: 120px;
     border: 2px solid var(--primary);
-    left: 60px;
-    top: 60px;
+    left: 40px;
+    top: 20px;
 }
 
 .team .info {
@@ -118,17 +118,17 @@ section {
     right: 0;
     z-index: 2;
     color: #363636;
-    padding: 10px;
-    border-top: 8px solid var(--primary);
+    padding: 1px;
+    border-top: 1px solid var(--primary);
     border-radius: 50% 50% 0px 0px;
-    padding-top: 8px;
+    padding-top: 1px;
     text-align: center;
     transform: scale(2)
 }
 
 .team .name {
     font-size: 24px;
-    padding: 16px;
+    padding: 6px;
     text-transform: capitalize;
 }
 
