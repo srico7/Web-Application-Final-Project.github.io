@@ -160,7 +160,7 @@ nav {
 .topic h1{
     margin: 0;
     font-size: 50px;
-    color: rgb(52, 73, 1);
+    color:rgb(37, 172, 154);
     font-weight: 500;
 }
 
@@ -174,7 +174,7 @@ nav {
 
 .sdgnews-1 img{
     width: 100%;
-    filter: brightness(0.7);
+    filter: brightness(1);
 }
 
 .sdgnews-1 h2{
@@ -184,15 +184,15 @@ nav {
 }
 
 .featured h2{
-    background-color: black;
+    background: linear-gradient(to right,limegreen, rgb(17, 189, 189));
 }
 
 .latest h2{
-    background-color: darkred;
+    background: linear-gradient(to right, rgb(17, 189, 189),limegreen);
 }
 
 .news-1 h2{
-    background-color: darkblue;
+    background: linear-gradient(to right,limegreen, rgb(17, 189, 189));
 }
 
 .carsusel{
@@ -656,7 +656,7 @@ a.button2{
         display: none;
     }
     .header .logo img{
-        width: 150px;
+        width: 100px;
         padding: 7px;
     }
     .menu{
