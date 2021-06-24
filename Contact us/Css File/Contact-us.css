@@ -472,8 +472,7 @@ margin-bottom: 1.875rem;
     color: whitesmoke;
     transition: opacity 300ms ease-in-out;
     font-weight: 400;
-    width: 160px;
-    height: 50px;
+    
 }
 .button:hover{
     opacity: 0.75;
