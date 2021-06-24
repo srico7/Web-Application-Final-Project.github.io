@@ -682,5 +682,22 @@ a.button2{
         margin-left: 0.475rem;
     }  
     
+    /*h2,p font size change */
+    .title h2{
+    font-weight: 500;  
+    font-size: 1rem;       
+    }   
+    .title p{
+    font-size: .8rem;
+    }
+    /* button marigin change */
+    input.middle-btn{
+    margin-top: 1rem;   
+    }
+    /* hover change */
+    .middle-btn:hover{
+    letter-spacing: 2.5px;
+    }   
+    
 }
 
