@@ -386,6 +386,47 @@ nav {
     transition: all .4s;
 }
 
+/* subscribe-sec */
+.subscribe-sec{
+    margin:1rem 0 1rem 0;
+    padding: 4rem 0 4rem 0;
+
+}
+input{ 
+       border: none;
+       border-radius: 50px;
+       box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+       font-family: inherit;
+       font-size: 1rem;
+       height: 42px;
+       padding: 0.8rem 1rem;
+       margin-left:1rem;
+       width: 70%;
+   }
+input.middle-btn{
+       background-color: #312940;
+       border: none;
+       border-radius: 50px;
+       color: #fff;
+       width: 150px;
+       height: 42px;
+       padding: 0.8rem 1rem;
+       cursor: pointer;
+       font-size: 0.8rem;
+       text-transform: uppercase;
+       letter-spacing: 2px;
+       position:relative;
+       transition: .3s;
+       top: 0;
+       right: 0;
+       margin: 0;
+   }
+   .middle-btn:hover{
+       background-color: #2d2835;
+       letter-spacing: 5px;
+   }
+/* end subscribe-sec*/
+
 /* footer */
 
 footer{
@@ -639,7 +680,7 @@ a.button2{
     }
     .menu{
         margin-left: 0.475rem;
-    }   
-   
+    }  
+    
 }
 
