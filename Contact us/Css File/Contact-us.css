@@ -635,6 +635,10 @@ margin-bottom: 1.875rem;
    
 }
 @media(max-width: 480px){
+    .logo img{
+        width: 100px;
+        padding: 7px;
+    }
     .content{
         padding: 1.5rem;
     }
