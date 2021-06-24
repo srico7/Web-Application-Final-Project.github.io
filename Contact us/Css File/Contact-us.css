@@ -606,11 +606,6 @@ margin-bottom: 1.875rem;
     .links{
         display: none;
     }
-
-    .logo img{
-        width: 150px;
-        padding: 7px;
-    }
     .f_item{
     flex:0 0 50%;
     }
@@ -626,8 +621,8 @@ margin-bottom: 1.875rem;
         display: none;
     }
     .header .logo img{
-        width: 150px;
-        padding: 7px;
+        width: 100px;
+        height: 70px;
     }
     .menu{
         margin-left: 0.475rem;
@@ -635,6 +630,10 @@ margin-bottom: 1.875rem;
    
 }
 @media(max-width: 480px){
+    .header .logo img{
+        width: 100px;
+        height: 70px;
+    }
     .content{
         padding: 1.5rem;
     }
