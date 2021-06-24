@@ -390,6 +390,16 @@ textarea.inputs{
     top: calc(50% - 180px);
     left: calc(50% - 180px);
 }
+.shape img{
+    position:absolute;
+    height: 300px;
+
+    top: 47%;
+    left: 50%;
+    transform: translate(115%, 1%);
+    opacity: 1;
+
+}
 /*footer*/
 
 footer{
