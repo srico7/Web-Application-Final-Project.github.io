@@ -141,8 +141,6 @@ nav {
     color: whitesmoke;
     transition: opacity 300ms ease-in-out;
     font-weight: 400;
-    width: 160px;
-    height: 50px;
     text-decoration: none;
 }
 .n_button:hover{
