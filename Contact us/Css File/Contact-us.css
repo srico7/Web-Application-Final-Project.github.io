@@ -394,12 +394,13 @@ textarea.inputs{
     position:absolute;
     height: 300px;
 
-    top: 47%;
+    top: 55%;
     left: 50%;
     transform: translate(115%, 1%);
     opacity: 1;
 
 }
+
 /*footer*/
 
 footer{
@@ -531,6 +532,8 @@ margin-bottom: 1.875rem;
 .fade-out {
     animation: fade-out 200ms ease-in-out forwards;
   }
+/* Footer end */
+  
 /*Responsive Create*/
 
 @media(min-width:850px){
@@ -603,6 +606,9 @@ margin-bottom: 1.875rem;
         bottom: 75%;
         transform: scale(0.9) translate(-40%, 30%);
         right: 50%;
+    }
+    .shape img{
+        display: none;
     }
     .paragraph{
         margin: 1rem 0 1.5rem 0;
@@ -677,4 +683,6 @@ margin-bottom: 1.875rem;
     .button{
         padding: .45rem 1.2rem;
     }
+}
+    
 }
