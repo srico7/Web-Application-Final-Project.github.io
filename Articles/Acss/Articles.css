@@ -302,6 +302,8 @@ body{
         background-size: cover; 
         width: 100%;
         background-position: 50% 50%;
+        font-size: 28px;
+        color: white;
     }
     .row1 {
         display: grid;
@@ -383,6 +385,18 @@ body{
     }
     
   }
+
+@media (max-width: 375px) {
+
+    .form6-1{
+        border: 2px solid red;
+        margin: 10px 0px 10px -18px;
+        padding: 10px 0px 10px 1px;
+    }
+    #form6-11{
+        padding: 0px 10px 40px 0px;
+        margin-right: 0px;
+}
         
 /*    @media (max-width:870px){
     .check{
