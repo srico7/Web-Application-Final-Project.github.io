@@ -27,8 +27,4 @@ hambtn.addEventListener('click', function(){
       }  
     }); 
 
-<<<<<<< HEAD:NEWS/news.js
-=======
-    //extra
->>>>>>> News-Letter-page-and-Contact-Us-page:Contact us/Js file/Webj.js
     
