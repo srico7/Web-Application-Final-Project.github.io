@@ -148,9 +148,18 @@ body{
 }
 .row6{
     width: 100%;
-    height: auto;
+    height: 500px;
+    float: left;
+    margin-left: 0%;
+    border: 0px;
+    background-size: cover;
+    background-position: 50% 50%;
     background-color: #292f33;
+    color: wheat;
+    font-size: 50px;
+    text-align: center;
 }
+/*
 .col6{
     width: 50%;
     height: 500px;
@@ -178,6 +187,7 @@ body{
     /*background: linear-gradient(to right,limegreen, rgb(17, 189, 189));*/
     /*background: linear-gradient(-45deg, #50badd, #24f73d  );*/
 }
+*/
 
 
 .form6{
