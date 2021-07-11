@@ -339,7 +339,7 @@ a.button2{
         }
 
         .logo img{
-            width: 150px;
+            width: 100px;
             padding: 7px;
         }
     }
@@ -352,7 +352,7 @@ a.button2{
             display: none;
         }
         .header .logo img{
-            width: 150px;
+            width: 100px;
             padding: 7px;
         }
         .menu{

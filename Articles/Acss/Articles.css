@@ -44,6 +44,7 @@ body{
 .text{
     padding-top: 80px;
     padding-left: 90px;
+    border: none;
 }
 .text-h1{
     font-size: 20px;
