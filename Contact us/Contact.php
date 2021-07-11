@@ -19,11 +19,6 @@
 
     mail($to,$email_subject,$email_body,$headers);
 
-    header("Location: Contact Us.html");
-
-    
-
-
-
+    header("Location: Contact Us.html");  
 
 ?>  
