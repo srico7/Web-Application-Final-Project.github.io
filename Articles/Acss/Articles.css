@@ -393,6 +393,12 @@ body{
         margin-right: 40px;
         font-size: 30px;
     }
+    .row6 {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        background-size: cover;
+        font-size: 40px;
+    }
     
   }
 
@@ -406,8 +412,8 @@ body{
     #form6-11{
         padding: 0px 10px 40px 0px;
         margin-right: 0px;
-}
-.img-1 {
+    }
+    .img-1 {
     display: grid;
     grid-template-rows: repeat(1, 1fr); 
     background-size: cover; 
@@ -415,6 +421,15 @@ body{
     background-position: 50% 50%;
     font-size: 26px;
     color: white;
+    }
+    .row6 {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        background-size: cover;
+        font-size: 35px;
+    }
+
+}
         
 /*    @media (max-width:870px){
     .check{
