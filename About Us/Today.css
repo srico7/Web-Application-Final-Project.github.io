@@ -134,6 +134,7 @@ section {
     z-index: 3;
     object-fit: cover;
     border: none;
+    transition: all 50ms ease-in-out;
 }
 
 .team:hover img {
@@ -155,13 +156,14 @@ section {
     border-radius: 50% 50% 0px 0px;
     padding-top: 0px;
     text-align: center;
-    transform: scale(2)
+    transform: scale(1.5)
 }
 
 .team .name {
     font-size: 24px;
     padding: 6px;
     text-transform: capitalize;
+    transition: all 50ms ease-in-out;
 }
 
 .team .title {
