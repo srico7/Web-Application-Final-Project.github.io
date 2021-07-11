@@ -252,8 +252,8 @@ nav {
 /* sdg news-2 css part */
 
 .sdgnews-2{
-    background-color: black;
-    color: white;
+    background-color: whitesmoke;
+    color: black;
     padding-top: 0.0625rem;
 }
 
@@ -274,6 +274,7 @@ nav {
 
 .more-news img{
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .more-news img:hover{
@@ -284,6 +285,7 @@ nav {
 .morenews-1{
     flex-basis: 35%;
     flex-wrap: wrap;
+    padding-right: 7px;
 }
 
 .morenews-2{
@@ -294,6 +296,56 @@ nav {
 .morenews-3{
     flex-basis: 25%;
     flex-wrap: wrap;
+}
+
+/*l-circle*/
+.l-circle{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius:50%;
+    background: linear-gradient(to bottom, #1cd4af, #159b80);
+    bottom: 50%;
+    right: 50%;
+    transform: translate(-20%, 38%);
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.l-circle::after{
+    content:"";
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: calc(50% - 180px);
+    left: calc(50% - 180px);
+}
+
+/*l-circle-2*/
+.l-circle-2{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius:50%;
+    background: linear-gradient(to bottom, #1cd4af, #159b80);
+    bottom: 50%;
+    right: 50%;
+    transform: translate(122%, 401%);
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.l-circle-2::after{
+    content:"";
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: calc(50% - 180px);
+    left: calc(50% - 180px);
 }
 
 /* recent news */
@@ -315,19 +367,20 @@ nav {
 }
 
 .recent{
-    border: 2px solid white;
+    border: 2px solid black;
     margin: auto 0;
     border-radius: 5px;
     padding: 5px;
 }
 
 .recent-news a{
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
 .recent-news a:hover{
-    color: rgb(179, 179, 179);
+    transform: scale(1.05);
+    color: black;
 }
 
 /* videos */
@@ -349,7 +402,7 @@ nav {
 }
 
 .videos{
-    border: 2px solid white;
+    border: 2px solid black;
     margin: 30px 0;
     border-radius: 5px;
     padding: 5px;
@@ -357,18 +410,19 @@ nav {
 }
 
 .video-post a{
-    color: white;
+    color: black;
     text-decoration: none; 
 }
 
 .video-post a:hover{
-    color: rgb(179, 179, 179);
+    transform: scale(1.05);
+    color: black;
 }
 
 /* read more button */
 .read-more-btn{
     padding: 1px 5px;
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(183, 194, 196);
     border: none;
     outline: none;
     font-size: 15px;
@@ -379,7 +433,7 @@ nav {
 }
 
 .read-more-btn:hover{
-    background-color: rgb(160, 157, 157);
+    background-color: rgb(132, 137, 138);
     transform: scale(1.05);
     transition: all .4s;
 }
@@ -400,6 +454,7 @@ input{
        padding: 0.8rem 1rem;
        margin-left:1rem;
        width: 70%;
+       background-color: #e9efecad;
    }
 input.middle-btn{
        background-color: #312940;
@@ -659,6 +714,9 @@ a.button2{
 
     .recent, .videos{
         border-width: 0;
+    }
+    .l-circle, .l-circle-2{
+        display: none;
     }
     
 
