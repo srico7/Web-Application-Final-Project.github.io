@@ -1,24 +1,41 @@
+<html>
+<body>
 <?php
-    $name = $_POST['name'];
-    $visitor_email = $_POST['email'];
-    $message = $_POST['message'];
 
-    $email_from = 'chathuramail7@gmail.com';
+    $name = $_REQUEST['username'];
 
-    $email_subject = "New form Submission";
+    $visitor_email = $_REQUEST['email'];
 
-    $email_body = "User Name: $name.\n".
-    "user Email: $visitor_email.\n".
-    "User Message: $message.\n";
+    $message = $_REQUEST['message'];
 
-    $to = "mactmunasinghe@students.nsbm.ac.lk";
+    echo "User Name: $name <br>";
 
-    $headers = "$From: $email_from \r\n";
+    echo "user Email: $visitor_email <br>";
 
-    $headers = "$Reply_To: $visitor_email \r\n";
+    echo "User Message: $message <br>";
 
-    mail($to,$email_subject,$email_body,$headers);
+    $con=mysqli_connect("localhost","root","");
 
-    header("Location: Contact Us.html");  
+    mysqli_select_db($con,"contact_db"); 
 
-?>  
+    $sql = "INSERT INTO info_contact(name,email,message) 
+
+    VALUES('$name','$visitor_email','$message')";
+
+    
+
+    if($con){
+
+        echo "Conecction Succesful!";
+
+    }    
+
+    mysqli_query($con,$sql);
+
+    $referer = $_SERVER['HTTP_REFERER'];
+
+    header("Location: $referer");
+
+?>    
+</body> 
+</html>
