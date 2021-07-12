@@ -757,3 +757,9 @@ a.button2{
     
 }
 
+@media (max-width: 1220px){
+    .l-circle-2{
+        display: none;
+    }
+}
+
